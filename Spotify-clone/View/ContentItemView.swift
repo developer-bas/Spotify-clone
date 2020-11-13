@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentItemView: View {
     var topSpacerHeight: CGFloat = 400
-    var playButtonOffSet: CGFloat = 335
+   @State var playButtonOffSet: CGFloat = 335
     
     var body: some View {
         ZStack {
@@ -32,6 +32,19 @@ struct ContentItemView: View {
             }
 //            Layer 2
             ScrollView {
+                GeometryReader{ geo  -> AnyView?  in
+                    let thisOffSet = geo.frame(in: .global).minY
+                    
+                    if thisOffSet > -300 {
+                        self.playButtonOffSet = thisOffSet
+                    }else{
+                        self.playButtonOffSet = -300
+                    }
+                    
+                    
+                    
+                    return nil
+                }
                 VStack(spacing:0){
                     HStack {
                         Spacer()
@@ -40,7 +53,7 @@ struct ContentItemView: View {
                     }
                     
                     VStack {
-                        ForEach(0..<10){ indicato in
+                        ForEach(0..<15){ indicato in
                             HStack {
                                 
                                 CustomSongCell()
@@ -56,13 +69,19 @@ struct ContentItemView: View {
 //            Layer 3
             VStack {
                 Spacer()
-                    .frame(height: playButtonOffSet)
+                    .frame(height: playButtonOffSet + 300)
                 Text("Play")
                     .foregroundColor(.white)
                     .frame(width: 240, height : 50)
                     .background(Color.init(red: 30/255, green: 215/255, blue: 96/255 ))
                     .cornerRadius(25)
                     .font(.system(size: 20, weight: .bold))
+                    .shadow(radius: 20)
+                Spacer()
+            }
+//            Observer layer
+            VStack{
+                Text("\(playButtonOffSet)").foregroundColor(.yellow)
                 Spacer()
             }
         }
