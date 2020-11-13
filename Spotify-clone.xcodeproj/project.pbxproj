@@ -13,6 +13,10 @@
 		155E79AD255D432A007B4CEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155E79AC255D432A007B4CEE /* Assets.xcassets */; };
 		155E79B0255D432A007B4CEE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155E79AF255D432A007B4CEE /* Preview Assets.xcassets */; };
 		155E79B3255D432A007B4CEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155E79B1255D432A007B4CEE /* LaunchScreen.storyboard */; };
+		155E79BC255D4507007B4CEE /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155E79BB255D4507007B4CEE /* HomePage.swift */; };
+		155E79BF255D453E007B4CEE /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155E79BE255D453E007B4CEE /* SearchPage.swift */; };
+		155E79C3255D45B3007B4CEE /* ContentItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155E79C2255D45B3007B4CEE /* ContentItemView.swift */; };
+		155E79CA255D53BB007B4CEE /* CustomSongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155E79C9255D53BB007B4CEE /* CustomSongCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		155E79AF255D432A007B4CEE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		155E79B2255D432A007B4CEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		155E79B4255D432A007B4CEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		155E79BB255D4507007B4CEE /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		155E79BE255D453E007B4CEE /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
+		155E79C2255D45B3007B4CEE /* ContentItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentItemView.swift; sourceTree = "<group>"; };
+		155E79C9255D53BB007B4CEE /* CustomSongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSongCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,7 @@
 		155E799A255D4329007B4CEE = {
 			isa = PBXGroup;
 			children = (
+				155E79C9255D53BB007B4CEE /* CustomSongCell.swift */,
 				155E79A5255D4329007B4CEE /* Spotify-clone */,
 				155E79A4255D4329007B4CEE /* Products */,
 			);
@@ -56,9 +65,9 @@
 		155E79A5255D4329007B4CEE /* Spotify-clone */ = {
 			isa = PBXGroup;
 			children = (
+				155E79C5255D45C3007B4CEE /* View */,
 				155E79A6255D4329007B4CEE /* AppDelegate.swift */,
 				155E79A8255D4329007B4CEE /* SceneDelegate.swift */,
-				155E79AA255D4329007B4CEE /* ContentView.swift */,
 				155E79AC255D432A007B4CEE /* Assets.xcassets */,
 				155E79B1255D432A007B4CEE /* LaunchScreen.storyboard */,
 				155E79B4255D432A007B4CEE /* Info.plist */,
@@ -73,6 +82,17 @@
 				155E79AF255D432A007B4CEE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		155E79C5255D45C3007B4CEE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				155E79BB255D4507007B4CEE /* HomePage.swift */,
+				155E79BE255D453E007B4CEE /* SearchPage.swift */,
+				155E79C2255D45B3007B4CEE /* ContentItemView.swift */,
+				155E79AA255D4329007B4CEE /* ContentView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +165,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				155E79CA255D53BB007B4CEE /* CustomSongCell.swift in Sources */,
 				155E79A7255D4329007B4CEE /* AppDelegate.swift in Sources */,
 				155E79A9255D4329007B4CEE /* SceneDelegate.swift in Sources */,
 				155E79AB255D4329007B4CEE /* ContentView.swift in Sources */,
+				155E79C3255D45B3007B4CEE /* ContentItemView.swift in Sources */,
+				155E79BF255D453E007B4CEE /* SearchPage.swift in Sources */,
+				155E79BC255D4507007B4CEE /* HomePage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
