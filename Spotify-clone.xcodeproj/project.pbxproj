@@ -17,6 +17,8 @@
 		155E79BF255D453E007B4CEE /* SearchPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155E79BE255D453E007B4CEE /* SearchPage.swift */; };
 		155E79C3255D45B3007B4CEE /* ContentItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155E79C2255D45B3007B4CEE /* ContentItemView.swift */; };
 		155E79CA255D53BB007B4CEE /* CustomSongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155E79C9255D53BB007B4CEE /* CustomSongCell.swift */; };
+		159C5939256C282F0072C1C2 /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159C5938256C282F0072C1C2 /* BlurView.swift */; };
+		159C593C256C294B0072C1C2 /* Miniplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159C593B256C294B0072C1C2 /* Miniplayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		155E79BE255D453E007B4CEE /* SearchPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPage.swift; sourceTree = "<group>"; };
 		155E79C2255D45B3007B4CEE /* ContentItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentItemView.swift; sourceTree = "<group>"; };
 		155E79C9255D53BB007B4CEE /* CustomSongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSongCell.swift; sourceTree = "<group>"; };
+		159C5938256C282F0072C1C2 /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
+		159C593B256C294B0072C1C2 /* Miniplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Miniplayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +52,6 @@
 		155E799A255D4329007B4CEE = {
 			isa = PBXGroup;
 			children = (
-				155E79C9255D53BB007B4CEE /* CustomSongCell.swift */,
 				155E79A5255D4329007B4CEE /* Spotify-clone */,
 				155E79A4255D4329007B4CEE /* Products */,
 			);
@@ -65,6 +68,7 @@
 		155E79A5255D4329007B4CEE /* Spotify-clone */ = {
 			isa = PBXGroup;
 			children = (
+				155E79C9255D53BB007B4CEE /* CustomSongCell.swift */,
 				155E79C5255D45C3007B4CEE /* View */,
 				155E79A6255D4329007B4CEE /* AppDelegate.swift */,
 				155E79A8255D4329007B4CEE /* SceneDelegate.swift */,
@@ -91,6 +95,8 @@
 				155E79BE255D453E007B4CEE /* SearchPage.swift */,
 				155E79C2255D45B3007B4CEE /* ContentItemView.swift */,
 				155E79AA255D4329007B4CEE /* ContentView.swift */,
+				159C5938256C282F0072C1C2 /* BlurView.swift */,
+				159C593B256C294B0072C1C2 /* Miniplayer.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -166,10 +172,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				155E79CA255D53BB007B4CEE /* CustomSongCell.swift in Sources */,
+				159C5939256C282F0072C1C2 /* BlurView.swift in Sources */,
 				155E79A7255D4329007B4CEE /* AppDelegate.swift in Sources */,
 				155E79A9255D4329007B4CEE /* SceneDelegate.swift in Sources */,
 				155E79AB255D4329007B4CEE /* ContentView.swift in Sources */,
 				155E79C3255D45B3007B4CEE /* ContentItemView.swift in Sources */,
+				159C593C256C294B0072C1C2 /* Miniplayer.swift in Sources */,
 				155E79BF255D453E007B4CEE /* SearchPage.swift in Sources */,
 				155E79BC255D4507007B4CEE /* HomePage.swift in Sources */,
 			);

@@ -8,28 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var expand = false
+    @Namespace var animation 
+    
     var body: some View {
-        TabView{
-            HomePage()
-                .font(.title)
-                .tabItem {
-                    VStack{
-                        Image(systemName: "house")
-                        Text("Home")
+        
+        ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom),content: {
+            TabView{
+                HomePage()
+                    .font(.title)
+                    .tabItem {
+                        VStack{
+                            Image(systemName: "house")
+                            Text("Home")
+                        }
                     }
-                }
-                .tag(0)
+                    .tag(0)
+                
+               SearchPage()
+                    .font(.title)
+                    .tabItem {
+                        VStack{
+                            Image(systemName: "magnifyingglass")
+                            Text("Search")
+                        }
+                    }
+                    .tag(1)
+            }
             
-           SearchPage()
-                .font(.title)
-                .tabItem {
-                    VStack{
-                        Image(systemName: "magnifyingglass")
-                        Text("Search")
-                    }
-                }
-                .tag(1)
-        }
+            Miniplayer(animation: animation, expand: $expand)
+        })
         
     }
 }
