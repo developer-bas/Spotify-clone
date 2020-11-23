@@ -37,7 +37,7 @@ struct SearchPage: View {
                 LazyVGrid(columns: columns, spacing: 20){
                     
                     
-                    ForEach(1...4,id: \.self){ index in
+                    ForEach(1...7,id: \.self){ index in
                         Image("album\(index)")
                             .resizable()
                             .aspectRatio(contentMode: .fill)

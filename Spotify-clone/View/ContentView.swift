@@ -16,7 +16,7 @@ struct ContentView: View {
         
         ZStack(alignment: Alignment(horizontal: .center, vertical: .bottom),content: {
             TabView{
-                HomePage()
+                ContentItemView()
                     .font(.title)
                     .tabItem {
                         VStack{
